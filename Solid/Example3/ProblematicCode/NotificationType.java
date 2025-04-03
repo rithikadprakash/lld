@@ -6,20 +6,20 @@ public enum NotificationType {
     PUSH,
     WHATSAPP;
 
-    public void sendSMSNotification() {
-        System.out.println("Sending SMS notification");
+    public void sendSMSNotification(String message) {
+        System.out.println("Sending SMS notification" + message);
     }
 
-    public void sendEmailNotification() {
-        System.out.println("Sending Email notification");
+    public void sendEmailNotification(String message) {
+        System.out.println("Sending Email notification" + message);
     }
 
-    public void sendPushNotification() {
-        System.out.println("Sending Push notification");
+    public void sendPushNotification(String message) {
+        System.out.println("Sending Push notification" + message);
     }
 
-    public void sendWhatsAppNotification() {
-        System.out.println("Sending WhatsApp notification");
+    public void sendWhatsAppNotification(String message) {
+        System.out.println("Sending WhatsApp notification" + message);
     }
 }
 

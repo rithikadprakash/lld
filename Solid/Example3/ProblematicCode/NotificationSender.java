@@ -3,20 +3,20 @@ package Solid.Example3.ProblematicCode;
 import java.util.List;
 
 public class NotificationSender {
-    public void sendNotification(List<NotificationType> notificationTypes) {
+    public void sendNotification(List<NotificationType> notificationTypes, String message) {
         for (NotificationType notificationType : notificationTypes) {
             switch (notificationType) {
                 case SMS:
-                    notificationType.sendSMSNotification();
+                    notificationType.sendSMSNotification(message);
                     break;
                 case EMAIL:
-                    notificationType.sendEmailNotification();
+                    notificationType.sendEmailNotification(message);
                     break;
                 case PUSH:
-                    notificationType.sendPushNotification();
+                    notificationType.sendPushNotification(message);
                     break;
                 case WHATSAPP:
-                    notificationType.sendWhatsAppNotification();
+                    notificationType.sendWhatsAppNotification(message);
                     break;
             }
         }
